@@ -1,6 +1,6 @@
 name: Search API Pantheon - Federated
 type: module
-description: Search API + Solr + Pantheon integration
+description: Search API + Solr + Pantheon Fed integration
 core_version_requirement: ^8.8 || ^9
 package: Search
 dependencies:
