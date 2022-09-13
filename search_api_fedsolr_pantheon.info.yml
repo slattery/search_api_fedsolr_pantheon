@@ -7,6 +7,6 @@ dependencies:
   - search_api_solr:search_api_solr
 
 # Information added by Drupal.org packaging script on 2022-07-12
-version: '8.0.1'
+version: '1.4.3'
 project: 'search_api_fedsolr_pantheon'
 datestamp: 1657661933
