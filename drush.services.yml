@@ -1,0 +1,16 @@
+services:
+  search_api_fedsolr_pantheon.drush_diagnose:
+    class: \Drupal\search_api_fedsolr_pantheon\Commands\Diagnose
+    arguments: [ "@logger.factory", "@search_api_fedsolr_pantheon.pantheon_guzzle", "@search_api_fedsolr_pantheon.endpoint", "@search_api_fedsolr_pantheon.solarium_client" ]
+    tags:
+      - { name: drush.command }
+  search_api_fedsolr_pantheon.drush_schema:
+    class: \Drupal\search_api_fedsolr_pantheon\Commands\Schema
+    arguments: [ "@logger.factory", "@search_api_fedsolr_pantheon.pantheon_guzzle", "@search_api_fedsolr_pantheon.schema_poster" ]
+    tags:
+      - { name: drush.command }
+  search_api_fedsolr_pantheon.drush_query:
+    class: \Drupal\search_api_fedsolr_pantheon\Commands\Query
+    arguments: [ "@logger.factory", "@search_api_fedsolr_pantheon.pantheon_guzzle", "@search_api_fedsolr_pantheon.endpoint", "@search_api_fedsolr_pantheon.solarium_client" ]
+    tags:
+      - { name: drush.command }
